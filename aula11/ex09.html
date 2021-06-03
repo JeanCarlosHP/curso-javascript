@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício País</title>
+    <style>
+        body {
+            background-color: rgb(53, 147, 255);
+            font: normal 18pt Arial;
+        }
+
+        input {
+            font: normal 12pt Arial;
+        }
+
+        div#resultado {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Brasileiro ou Estrangeiro</h1>
+    Você é de qual país? <input type="text" id="pais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="resultado"></div>
+    <script>
+        function verificar() {
+            var ps = document.getElementById('pais')
+            var pais = ps.value
+            var res = document.getElementById('resultado')
+
+            res.innerHTML = `<p>Você está morando no(a) ${pais}</p>`
+
+            if (pais == 'Brasil') {
+                res.innerHTML += `<p>Você é brasileiro</p>`
+            } else {
+                res.innerHTML += `<p>Você é estrangeiro</p>`
+            }
+        }
+    </script>
+</body>
+
+</html>
