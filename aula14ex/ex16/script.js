@@ -15,9 +15,14 @@ function contar() {
         var fim = Number(inputFim.value)
         var passo = Number(inputPasso.value)
 
+        if (passo == 0) {
+            alert('Passo Inválido! Considerado PASSO 1')
+            passo = 1
+        }
+
         res.innerHTML = '<p>Contando...</p>'
 
-        for (var c = inicio; c < fim; c += passo) {
+        for (var c = inicio; c <= fim; c += passo) {
             res.innerHTML += `   ${c}    &#x1F449`
         }
 
