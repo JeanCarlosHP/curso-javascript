@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(55, 105, 243);
+    font: normal 15pt Arial;
+    color: white;
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    width: 500px;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.219);
+}
+
+#input {
+    padding-top: 20px;
+}
+
+input {
+    font-size: 11pt;
+}
+
+#btn-contar {
+    display: block;
+    padding: 10px 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+#resultado {
+    padding-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+}
